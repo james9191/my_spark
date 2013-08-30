@@ -499,7 +499,7 @@ public class LocalPreferences {
 		setBoolean("hostAndPort", configured);
 	}
 
-        public String getResource() {
+	public String getResource() {
             if (props.getProperty("resource", "spark").equals("spark"))
             {
                 setResource(Default.getString(Default.SHORT_NAME) + " " + JiveInfo.getVersion());
